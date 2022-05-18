@@ -1,0 +1,254 @@
+\documentclass[compress,brown]{beamer}
+\usepackage{etex}
+\mode<presentation>
+\usetheme{Warsaw}
+\hypersetup{pdfpagemode=FullScreen}
+\definecolor{Red}{rgb}{1,0,0}
+\definecolor{Blue}{rgb}{0,0,1}
+\definecolor{Green}{rgb}{0,1,0}
+\definecolor{magenta}{rgb}{1,0,.6}
+\definecolor{lightblue}{rgb}{0,.5,1}
+\definecolor{lightpurple}{rgb}{.6,.4,1}
+\definecolor{gold}{rgb}{.6,.5,0}
+\definecolor{orange}{rgb}{1,0.4,0}
+\definecolor{hotpink}{rgb}{1,0,0.5}
+\definecolor{newcolor2}{rgb}{.5,.3,.5}
+\definecolor{newcolor}{rgb}{0,.3,1}
+\definecolor{newcolor3}{rgb}{1,0,.35}
+\definecolor{darkgreen1}{rgb}{0, .35, 0}
+\definecolor{darkgreen}{rgb}{0, .6, 0}
+\definecolor{darkred}{rgb}{.75,0,0}
+\xdefinecolor{olive}{cmyk}{0.64,0,0.95,0.4}
+\xdefinecolor{purpleish}{cmyk}{0.75,0.75,0,0}
+\useoutertheme[subsection=false]{smoothbars}
+\setbeamertemplate{footline}[text line]{} % makes the footer EMPTY
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage[all,knot]{xy}
+\xyoption{arc}
+\usepackage{url}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage[T1]{fontenc} 
+\usepackage{hyperref}
+
+\title{En route to Data Science}
+\author{\href{https://www.linkedin.com/in/vitali-avagyan-a1566234/}{Vitali Avagyan}}
+\institute{Data Scientist \\TurinTech \\London, UK}
+
+\date{updated on \today}
+
+\begin{document}
+
+	\frame{
+		\titlepage 
+	}
+
+\section{Presentation}
+
+\begin{frame}{R}
+For aspiring data scientists:
+\begin{itemize}
+	\item Communication skills: simplifying, explaining, demonstrating, visualising etc.
+	\item Functional programming in R
+	\begin{itemize}
+		\item Tools/Packages you should know on top of Base R
+		\begin{itemize}
+			\item dplyr, data.table (dtplyr)
+			\item lubridate and hms
+			\item purrr, stringi/stringr, zoo
+			\item keras and reticulate (to work with Python)
+			\item ggplot2 and shiny
+			\item DBI, RODBC and dbplyr (for database manipulations)
+			\item plumber (web applications)
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}{Python}
+\begin{itemize}
+  \item Python Fundamentals incl. Object-Oriented Programming (OOP) in Python
+	\begin{itemize}
+		\item Modules, packages and paths
+		\begin{itemize}
+			\item pip, Path (pathlib library), os, typing
+			\item pickle and json
+		\end{itemize} 		
+		\item Class vs Object; Encapsulation, Inheritance (+ Abstraction); Polymorphism
+		\begin{itemize}
+			\item built-ins
+			\item DRY principle
+			\item f-string
+			\item properties, decorators
+		\end{itemize} 
+		\item Hashable vs non-hashable data structures
+			\begin{itemize}
+				\item list, dict, comprehensions, tuple, set 
+			\end{itemize}
+		\item Iterators, generators and recursion
+		\item Exception handling and testing
+		\begin{itemize}
+			\item assert; try ... except ...finally
+			\item mypy, pytest, unittest
+		\end{itemize}		
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Python for Data Science}
+\begin{itemize}
+  \item Python for Data Science
+\begin{itemize}
+		\item conda (anaconda)
+		\item venv (python)
+		\item Jupyter notebook (AWS SageMaker is a plus)
+		\item Pandas, Numpy, SciKit-Learn, Scipy
+		\item Tensorflow/Keras and Pytorch 
+		\item Matplotlib, Seaborn and Bokeh (visualisation)
+		\item Flask, Streamlit (web applications)
+\end{itemize}
+\end{itemize}
+\end{frame}
+	
+\begin{frame}{SQL, IDEs, Linear Algebra and Stats}	
+		\begin{itemize}
+			\item Other languages: SQL (MySQL or Microsoft SQL Server, PostgreSQL is a plus)
+			\item IDE/Interpreter
+			\begin{itemize}
+				\item Visual Code (with its excellent extensions), RStudio (also RStudio Server for cloud), PyCharm
+				\item Databases; JSON, YML(YAML), flat files
+			\end{itemize}
+		\end{itemize}
+	
+		\begin{itemize}
+	\item Linear Algebra
+	\begin{itemize}
+		\item Vectors, Matrices, and Tensors
+	\end{itemize}
+\item Stats/ML
+	\begin{itemize}
+	\item Normal, Poisson, and Exponential distributions, Mean, SD, Percentiles; Gaussian and Markov-Chain processes
+	\item Linear \& Logistic Regressions; Forecasting;T-test/ANOVA, error metrics (MSE, RMSE etc. ); Monte-Carlo simulation
+	\item Maximum Likelihood Estimator, Bayes rule, naive Bayes, K-means, KNN, Markov Chain, Decision Trees (Random Forest is a plus); Gaussian mixture models
+	\item Neural Networks (at least feed-forward neural networks, CNNs, RNNs (e.g. LSTM and GRU) and AutoEncoders)
+\end{itemize}
+\end{itemize}		
+	\end{frame}
+
+\begin{frame}{Math, Linux and Containers}
+	\begin{itemize}
+		\item Differential and Integral Calculus
+		\begin{itemize}
+			\item Derivatives, Partial Derivatives
+			\item Interpolation, Taylor expansion
+			\item Optimisation (especially gradient descent-based algorithms)
+		\end{itemize}
+	\item Linux/GNU and command-line proficiency
+	\begin{itemize}
+		\item Understanding of namespaces
+		\item Use of SSH, use of Bash (or any other shell), and RegEx (it will save you tons of time)
+			\begin{itemize}
+				\item re (Python)
+				\item awk and sed (shell)
+			\end{itemize}
+		\item Vi/Vim
+		\item PowerShell (preferable over CMD if on Windows)
+		\item git (git has become the industry standard)
+	\end{itemize}
+\item Containerisation and Virtualisation
+\begin{itemize}
+	\item docker (understanding of microservices architecture and Kubernetes is a plus)
+	\item Virtual Machines, Oracle VirtualBox, WSL (if on Windows 10)
+\end{itemize}
+
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame} {Competitive Edge}
+	\begin{itemize}
+		\item Cloud
+			\begin{itemize}
+				\item Hands-on either with AWS, Azure, or GCP
+				\item cloud instances (ec2 etc.) and cloud storage systems (s3 etc.)
+				\item command-line interfaces (aws cli etc.), use of SDKs (paws, Boto3, etc.)
+			\end{itemize}		
+		\item Natural Language Processing
+			\begin{itemize}
+				\item Bag-of-words
+				\item Transformers
+				\item Transfer Learning
+			\end{itemize}		
+		\item Reinforcement Learning
+		\item DevOps and Infrastructure as a Code
+		\begin{itemize}
+			\item Code review/debugging/testing
+			\item Ansible and/or Terraform 
+			\item Configuration management (Chef or Puppet)
+			\item Automation (Jenkins)
+		\end{itemize}
+		\item Computer Vision
+	\end{itemize}
+\end{frame}
+\begin{frame}{Big Data; Distributed Computing and AutoML}
+\begin{itemize}
+	\item Big Data
+	\begin{itemize}
+		\item Distributed/parallel computing
+		\item map-reduce
+		\item apply family (base R) and map family from purrr library R
+		\item programming in Scala, Apache Spark (understanding of Hadoop helps), Apache Parquet file format
+		\item foreach, doParallel, doSnow (R)
+		\item joblib (Python)
+		\item Dask in Python; Ray; PySpark
+		\item Understanding of RAM and computation in memory
+	\end{itemize}
+	\item AutoML/Pipelines
+		\begin{itemize}
+			\item EvoML (from TurinTech)
+			\item DataRobot
+			\item Databricks
+			\item PyCaret
+			\item pickle, mlflow
+		\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Recommended Books}
+\begin{itemize}
+	\item Machine Learning: An Applied Mathematics Introduction by Paul Wilmott; Machine Learning Engineering by Andriy Burkov; Basic Econometrics by Damodar Gujarati (foundational)
+	\item Deep Learning with Python, 2nd Edition by Francois Chollet; Hands-On Machine Learning with Scikit-Learn, Keras and Tensorflow by Aurelien Geron (practical)
+	\item Pattern Recognition and Machine Learning by Christopher Bishop; The Elements of Statistical Learning by Hastie et al (theoretical)
+	\item Python Object-Oriented Programming, Fourth Edition by Steven F. Lott \& Dusty Phillips; The Pragmatic Programmer, 20th Anniversary Edition by Andy Hunt and Dave Thomas (programming)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Other Resources}
+\begin{itemize}
+	\item \href{https://machinelearningmastery.com/}{Machine Learning Mastery} (python)   		\item \href{https://www.sololearn.com/home}{SoloLearn} (programming)
+	\item \href{https://www.youtube.com/c/3blue1brown}{3blue1brown} (math)
+	\item \href{https://www.kaggle.com/}{Kaggle} (competitions)
+	\item \href{https://www.youtube.com/c/AbhishekThakurAbhi}{Abishek Thakur} (kaggle) 
+	\item \href{https://www.youtube.com/c/SuperDataSciencePodcastwithJonKrohn}{Super Data Science Podcast with Jon Krohn} (podcast)
+	\item \href{https://www.youtube.com/c/K\%C3\%A1rolyZsolnai}{Two Minute Papers} (research)
+	\item \href{https://www.youtube.com/c/NeEDSNetworkofEuropeanDataScientists}{NeEDS - Network of European Data Scientists} (research)
+	\item \href{https://www.youtube.com/user/krishnaik06}{Krish Naik}
+	\item \href{https://www.youtube.com/channel/UCmOwsoHty5PrmE-3QhUBfPQ}{Jay Alammar}
+	\item \href{https://www.youtube.com/c/KodeKloud}{KodeKloud} (DevOps)
+\end{itemize}
+\end{frame}
+
+\section{The End}
+	\begin{frame}{Thank you}
+	\vspace{-0.3cm}	
+	\center 
+	Connect with me in\href{https://www.linkedin.com/in/vitali-avagyan-a1566234/}{ \underline{LinkedIn}}  
+	
+	
+\end{frame}
+\end{document}
