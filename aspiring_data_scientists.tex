@@ -63,9 +63,9 @@ For aspiring data scientists:
 			\item lubridate and hms
 			\item purrr, stringi/stringr, zoo
 			\item keras and reticulate (to work with Python)
-			\item ggplot2 and shiny
+			\item ggplot2
 			\item DBI, RODBC and dbplyr (for database manipulations)
-			\item plumber (web applications)
+			\item plumber and shiny (web applications)
 		\end{itemize}
 	\end{itemize}
 \end{itemize}
@@ -104,41 +104,45 @@ For aspiring data scientists:
 \begin{itemize}
   \item Python for Data Science
 \begin{itemize}
-		\item conda (anaconda)
-		\item venv (python)
+		\item conda (anaconda), venv (python) -> environment management
 		\item Jupyter notebook (AWS SageMaker is a plus)
 		\item Pandas, Numpy, SciKit-Learn, Scipy
 		\item Tensorflow/Keras and Pytorch 
-		\item Matplotlib, Seaborn and Bokeh (visualisation)
-		\item Flask, Streamlit (web applications)
+		\item Plotly, Bokeh, Matplotlib, Seaborn -> visualisation
+		\item Flask, Streamlit, Dash -> web applications
 \end{itemize}
 \end{itemize}
 \end{frame}
 	
-\begin{frame}{SQL, IDEs, Linear Algebra and Stats}	
+\begin{frame}{SQL, IDEs, Linear Algebra}	
 		\begin{itemize}
 			\item Other languages: SQL (MySQL or Microsoft SQL Server, PostgreSQL is a plus)
 			\item IDE/Interpreter
 			\begin{itemize}
-				\item Visual Code (with its excellent extensions), RStudio (also RStudio Server for cloud), PyCharm
-				\item Databases; JSON, YML(YAML), flat files
+				\item Visual Code (+ extensions), RStudio (+ RStudio Server for cloud), PyCharm
+				\item Databases; JSON, YML (YAML), flat files
 			\end{itemize}
 		\end{itemize}
 	
 		\begin{itemize}
 	\item Linear Algebra
 	\begin{itemize}
-		\item Vectors, Matrices, and Tensors
+		\item Vectors, Matrices, and Tensors, eigenvectors/eigenvalues, singular value decomposition
 	\end{itemize}
-\item Stats/ML
-	\begin{itemize}
-	\item Normal, Poisson, and Exponential distributions, Mean, SD, Percentiles; Gaussian and Markov-Chain processes
-	\item Linear \& Logistic Regressions; Forecasting;T-test/ANOVA, error metrics (MSE, RMSE etc. ); Monte-Carlo simulation
-	\item Maximum Likelihood Estimator, Bayes rule, naive Bayes, K-means, KNN, Markov Chain, Decision Trees (Random Forest is a plus); Gaussian mixture models
-	\item Neural Networks (at least feed-forward neural networks, CNNs, RNNs (e.g. LSTM and GRU) and AutoEncoders)
-\end{itemize}
 \end{itemize}		
 	\end{frame}
+
+\begin{frame}{Statistics and Machine Learning}	
+
+		\begin{itemize}
+			\item Normal, Poisson, and Exponential distributions, Mean, SD, Percentiles; Gaussian and Markov-Chain processes
+			\item Linear \& Logistic Regressions; Times-series/Forecasting; T-test/ANOVA (+ their non-parametric equivalents), error metrics (MSE, RMSE etc. ); Monte-Carlo simulation; Sampling with (and without) replacement; Copulas
+			\item Maximum Likelihood Estimator, Bayes rule, Prior/Posterior distributions, naive Bayes, K-means, KNN, Markov Chain, HMM, Decision Trees (+ Random Forest, XGBoost, LightGBM abd CatBoost); Gaussian mixture models
+			\item Neural Networks (at least feed-forward, CNNs, RNNs (e.g. LSTM and GRU)
+			\item Clustering (k-means); dimensionality reduction (PCA, UMAP AutoEncoders and t-SNE)
+		\end{itemize}
+	
+\end{frame}
 
 \begin{frame}{Math, Linux and Containers}
 	\begin{itemize}
@@ -146,7 +150,7 @@ For aspiring data scientists:
 		\begin{itemize}
 			\item Derivatives, Partial Derivatives
 			\item Interpolation, Taylor expansion
-			\item Optimisation (especially gradient descent-based algorithms)
+			\item Optimisation (especially gradient descent-based algorithms); Lagrange multipliers; Constrained and Unconstrained Programming
 		\end{itemize}
 	\item Linux/GNU and command-line proficiency
 	\begin{itemize}
@@ -158,11 +162,11 @@ For aspiring data scientists:
 			\end{itemize}
 		\item Vi/Vim
 		\item PowerShell (preferable over CMD if on Windows)
-		\item git (git has become the industry standard)
+		\item git (the industry standard)
 	\end{itemize}
 \item Containerisation and Virtualisation
 \begin{itemize}
-	\item docker (understanding of microservices architecture and Kubernetes is a plus)
+	\item docker (understanding of microservices architecture and container orchestration (Kubernetes) is a plus)
 	\item Virtual Machines, Oracle VirtualBox, WSL (if on Windows 10)
 \end{itemize}
 
@@ -182,17 +186,17 @@ For aspiring data scientists:
 			\begin{itemize}
 				\item Bag-of-words
 				\item Transformers
-				\item Transfer Learning
+				\item Big pre-trained models (Word2Vec, GloVe, BERT, Albert) \& Transfer Learning
 			\end{itemize}		
 		\item Reinforcement Learning
 		\item DevOps and Infrastructure as a Code
 		\begin{itemize}
 			\item Code review/debugging/testing
-			\item Ansible and/or Terraform 
+			\item Ansible and Terraform 
 			\item Configuration management (Chef or Puppet)
 			\item Automation (Jenkins)
 		\end{itemize}
-		\item Computer Vision
+		\item Computer Vision (CNN's and Transformers)
 	\end{itemize}
 \end{frame}
 \begin{frame}{Big Data; Distributed Computing and AutoML}
@@ -204,13 +208,12 @@ For aspiring data scientists:
 		\item apply family (base R) and map family from purrr library R
 		\item programming in Scala, Apache Spark (understanding of Hadoop helps), Apache Parquet file format
 		\item foreach, doParallel, doSnow (R)
-		\item joblib (Python)
-		\item Dask in Python; Ray; PySpark
+		\item joblib (Python); Ray; Dask (Python); PySpark
 		\item Understanding of RAM and computation in memory
 	\end{itemize}
 	\item AutoML/Pipelines
 		\begin{itemize}
-			\item EvoML (from TurinTech)
+			\item EvoML (TurinTech)
 			\item DataRobot
 			\item Databricks
 			\item PyCaret
@@ -219,26 +222,47 @@ For aspiring data scientists:
 \end{itemize}
 \end{frame}
 
-\begin{frame}{Recommended Books}
+\begin{frame}{Recommended Books - Machine Learning}
 \begin{itemize}
-	\item Machine Learning: An Applied Mathematics Introduction by Paul Wilmott; Machine Learning Engineering by Andriy Burkov; Basic Econometrics by Damodar Gujarati (foundational)
-	\item Deep Learning with Python, 2nd Edition by Francois Chollet; Hands-On Machine Learning with Scikit-Learn, Keras and Tensorflow by Aurelien Geron (practical)
-	\item Pattern Recognition and Machine Learning by Christopher Bishop; The Elements of Statistical Learning by Hastie et al (theoretical)
-	\item Python Object-Oriented Programming, Fourth Edition by Steven F. Lott \& Dusty Phillips; The Pragmatic Programmer, 20th Anniversary Edition by Andy Hunt and Dave Thomas (programming)
+	\item Machine Learning: An Applied Mathematics Introduction by Paul Wilmott (\textbf{foundational})
+	\item Machine Learning Engineering by Andriy Burkov (\textbf{foundational})
+	\item Deep Learning with Python, 2nd Edition by Francois Chollet (\textbf{foundational and practical}))
+	\item Hands-On Machine Learning with Scikit-Learn, Keras and Tensorflow by Aurelien Geron (\textbf{practical})
+
 \end{itemize}
+\end{frame}
+
+\begin{frame}{Recommended Books - Statistics}
+	\begin{itemize}
+		\item Statistical Rethinking: A Bayesian Course with Examples in R and Stan, \textit{Second Edition} by Richard McElreath (\textbf{foundational and practical}))
+		\item Basic Econometrics by Damodar Gujarati (\textbf{foundational})
+		\item Econometrics by Example, 2nd Edition by Damodar Gujarati (\textbf{practical})
+		\item Pattern Recognition and Machine Learning by Christopher Bishop (\textbf{theoretical})
+		\item The Elements of Statistical Learning by Hastie et al. (\textbf{theoretical})
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Recommended Books - Software Engineering}
+	\begin{itemize}
+		\item Python Object-Oriented Programming, \textit{Fourth Edition} by Steven F. Lott \& Dusty Phillips
+		\item The Pragmatic Programmer, \textit{20th Anniversary Edition} by Andy Hunt and Dave Thomas
+		\item Expert Python Programming: Master Python by Learning the Best Coding Practices and Advanced Programming Concepts, \textit{4th Edition} by Michał Jaworski, Tarek Ziadé
+	\end{itemize}
 \end{frame}
 
 \begin{frame}{Other Resources}
 \begin{itemize}
-	\item \href{https://machinelearningmastery.com/}{Machine Learning Mastery} (python)   		\item \href{https://www.sololearn.com/home}{SoloLearn} (programming)
+	\item \href{https://machinelearningmastery.com/}{Machine Learning Mastery} (python)
+	\item \href{https://www.youtube.com/channel/UCNJK6_DZvcMqNSzQdEkzvzA} Statistical Rethinking lectures by Richard McElreath (statistics)  	
+	\item \href{https://www.youtube.com/c/ritvikmath} ritvikmath (statistics) 	
+	\item \href{https://www.sololearn.com/home}{SoloLearn} (programming)
 	\item \href{https://www.youtube.com/c/3blue1brown}{3blue1brown} (math)
 	\item \href{https://www.kaggle.com/}{Kaggle} (competitions)
-	\item \href{https://www.youtube.com/c/AbhishekThakurAbhi}{Abishek Thakur} (kaggle) 
+	\item \href{https://www.youtube.com/c/AbhishekThakurAbhi}{Abishek Thakur} (practical ML) 
 	\item \href{https://www.youtube.com/c/SuperDataSciencePodcastwithJonKrohn}{Super Data Science Podcast with Jon Krohn} (podcast)
 	\item \href{https://www.youtube.com/c/K\%C3\%A1rolyZsolnai}{Two Minute Papers} (research)
 	\item \href{https://www.youtube.com/c/NeEDSNetworkofEuropeanDataScientists}{NeEDS - Network of European Data Scientists} (research)
-	\item \href{https://www.youtube.com/user/krishnaik06}{Krish Naik}
-	\item \href{https://www.youtube.com/channel/UCmOwsoHty5PrmE-3QhUBfPQ}{Jay Alammar}
+	\item \href{https://www.youtube.com/channel/UCmOwsoHty5PrmE-3QhUBfPQ}{Jay Alammar} (NLP)
 	\item \href{https://www.youtube.com/c/KodeKloud}{KodeKloud} (DevOps)
 \end{itemize}
 \end{frame}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.2.28)  31 MAR 2022 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.5.2)  18 MAY 2022 02:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -918,7 +918,7 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 Package: babel 2022/01/26 3.70 The Babel package
 \babel@savecnt=\count354
 \U@D=\dimen331
-\l@unhyphenated=\language5
+\l@unhyphenated=\language9
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read4
@@ -929,7 +929,7 @@ Package babel Info: You haven't specified a language. I'll use 'nil'
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/nil.ldf
 Language: nil 2022/01/26 3.70 Nil language
-\l@nil=\language6
+\l@nil=\language10
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
@@ -1161,7 +1161,11 @@ ex.map}
 
 ] [6
 
-] [7
+]
+Overfull \vbox (0.83456pt too high) detected at line 175
+ []
+
+[7
 
 ] [8
 
@@ -1170,6 +1174,12 @@ ex.map}
 ] [10
 
 ] [11
+
+] [12
+
+] [13
+
+] [14
 
 ]
 \tf@nav=\write7
@@ -1181,30 +1191,30 @@ ex.map}
 \tf@snm=\write9
 \openout9 = `aspiring_data_scientists.snm'.
 
-
-(./aspiring_data_scientists.aux)
+ (./aspiring_data_scientists.aux)
 Package rerunfilecheck Info: File `aspiring_data_scientists.out' has not change
 d.
 (rerunfilecheck)             Checksum: 8C49F87FC40E202CFE73FB04BF407111;184.
  ) 
 Here is how much of TeX's memory you used:
- 26633 strings out of 480204
- 498402 string characters out of 5895010
- 825980 words of memory out of 5000000
- 43976 multiletter control sequences out of 15000+600000
- 482229 words of font info for 66 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
+ 26649 strings out of 480129
+ 498556 string characters out of 5893410
+ 828225 words of memory out of 5000000
+ 43993 multiletter control sequences out of 15000+600000
+ 483831 words of font info for 68 fonts, out of 8000000 for 9000
+ 81 hyphenation exceptions out of 8191
  128i,20n,122p,3249b,771s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/
-fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfss1440.pfb>
-Output written on aspiring_data_scientists.pdf (11 pages, 109841 bytes).
+fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb>
+Output written on aspiring_data_scientists.pdf (14 pages, 145581 bytes).
 PDF statistics:
- 531 PDF objects out of 1000 (max. 8388607)
- 467 compressed objects within 5 object streams
- 25 named destinations out of 1000 (max. 500000)
+ 702 PDF objects out of 1000 (max. 8388607)
+ 626 compressed objects within 7 object streams
+ 31 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
