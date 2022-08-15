@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.5.2)  18 MAY 2022 02:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.5.2)  15 AUG 2022 23:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1161,15 +1161,27 @@ ex.map}
 
 ] [6
 
+] [7
+
 ]
-Overfull \vbox (0.83456pt too high) detected at line 175
+! Undefined control sequence.
+\beamer@doifinframe ... Dickey-Fuller Test (\plus 
+                                                  Augmented Dickey Fuller Te...
+l.191 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[8
+
+]
+Overfull \vbox (0.83456pt too high) detected at line 221
  []
 
-[7
-
-] [8
-
-] [9
+[9
 
 ] [10
 
@@ -1180,6 +1192,12 @@ Overfull \vbox (0.83456pt too high) detected at line 175
 ] [13
 
 ] [14
+
+] [15
+
+] [16
+
+] [17
 
 ]
 \tf@nav=\write7
@@ -1197,24 +1215,25 @@ d.
 (rerunfilecheck)             Checksum: 8C49F87FC40E202CFE73FB04BF407111;184.
  ) 
 Here is how much of TeX's memory you used:
- 26649 strings out of 480129
- 498556 string characters out of 5893410
- 828225 words of memory out of 5000000
- 43993 multiletter control sequences out of 15000+600000
- 483831 words of font info for 68 fonts, out of 8000000 for 9000
+ 26664 strings out of 480129
+ 498694 string characters out of 5893410
+ 829226 words of memory out of 5000000
+ 44001 multiletter control sequences out of 15000+600000
+ 484647 words of font info for 69 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  128i,20n,122p,3249b,771s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/
-fonts/type1/public/cm-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfss1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfsx1095.pfb>
-Output written on aspiring_data_scientists.pdf (14 pages, 145581 bytes).
+fonts/type1/public/cm-super/sfsi1000.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfsi1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1095.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfsx1095.pfb>
+Output written on aspiring_data_scientists.pdf (17 pages, 163071 bytes).
 PDF statistics:
- 702 PDF objects out of 1000 (max. 8388607)
- 626 compressed objects within 7 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 901 PDF objects out of 1000 (max. 8388607)
+ 815 compressed objects within 9 object streams
+ 37 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -51,10 +51,77 @@
 
 \section{Presentation}
 
+\begin{frame}{Essentials}
+	\begin{itemize}
+		\item Communication skills
+			\begin{itemize}
+				\item simplifying
+				\item explaining
+				\item demonstrating		
+				\item visualising	
+			\end{itemize}
+		\item Networking
+			\begin{itemize}
+				\item \href{https://bigdataldn.com/}{Big Data London}
+				\item LinkedIn
+				\item reading blogs (\textit{e.g.} \href{https://www.technologyreview.com/}{MIT Technology Review}) and writing blogs (\textit{e.g.} \href{https://medium.com/}{Medium}) 			
+			\end{itemize}
+		\item reading conference papers and journals
+			\begin{itemize}
+				\item \href{https://nips.cc/}{NeurIPS}, \href{http://www.icmlc.org/}{ICMLC}, \textit{etc.}
+				\item \href{https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34}{IEEE Transactions on Pattern Analysis and Machine Intelligence}, \href{https://www.sciencedirect.com/journal/pattern-recognition}{Elsevier Pattern Recognition}, \href{https://www.scimagojr.com/journalsearch.php?q=21100235616&tip=sid&clean=0}{IEEE Transactions on Neural Networks and Learning Systems}, \href{https://www.jmlr.org/}{Journal of Machine Learning Research}, \textit{etc.}
+				\item \href{https://scholar.google.com/}{google scholar}, google-scholar alerts
+				\item \href{https://www.connectedpapers.com/}{Connected Papers} 				
+			\end{itemize}				
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}{Python}
+	\begin{itemize}
+		\item Python Fundamentals incl. Object-Oriented Programming (OOP) in Python
+		\begin{itemize}
+			\item Modules, packages and paths
+			\begin{itemize}
+				\item pip, Path (pathlib library), os, typing
+				\item pickle and json
+			\end{itemize} 		
+			\item Class vs Object; Encapsulation, Inheritance (+ Abstraction); Polymorphism
+			\begin{itemize}
+				\item built-ins
+				\item DRY principle
+				\item f-string
+				\item properties, decorators
+			\end{itemize} 
+			\item Hashable vs non-hashable data structures
+			\begin{itemize}
+				\item list, dict, comprehensions, tuple, set 
+			\end{itemize}
+			\item Iterators, generators and recursion
+			\item Exception handling and testing
+			\begin{itemize}
+				\item assert; try ... except ...finally
+				\item mypy, pytest, unittest
+			\end{itemize}		
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Python for Data Science}
+	\begin{itemize}
+		\item Python for Data Science
+		\begin{itemize}
+			\item conda (anaconda), venv (python) -> environment management
+			\item Jupyter notebook (AWS SageMaker is a plus)
+			\item Pandas, Numpy, SciKit-Learn, Scipy
+			\item Tensorflow/Keras and Pytorch 
+			\item Plotly, Bokeh, Matplotlib, Seaborn -> visualisation
+			\item Flask, Streamlit, Dash -> web applications
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
 \begin{frame}{R}
-For aspiring data scientists:
 \begin{itemize}
-	\item Communication skills: simplifying, explaining, demonstrating, visualising etc.
 	\item Functional programming in R
 	\begin{itemize}
 		\item Tools/Packages you should know on top of Base R
@@ -70,77 +137,56 @@ For aspiring data scientists:
 	\end{itemize}
 \end{itemize}
 \end{frame}
-\begin{frame}{Python}
-\begin{itemize}
-  \item Python Fundamentals incl. Object-Oriented Programming (OOP) in Python
-	\begin{itemize}
-		\item Modules, packages and paths
-		\begin{itemize}
-			\item pip, Path (pathlib library), os, typing
-			\item pickle and json
-		\end{itemize} 		
-		\item Class vs Object; Encapsulation, Inheritance (+ Abstraction); Polymorphism
-		\begin{itemize}
-			\item built-ins
-			\item DRY principle
-			\item f-string
-			\item properties, decorators
-		\end{itemize} 
-		\item Hashable vs non-hashable data structures
-			\begin{itemize}
-				\item list, dict, comprehensions, tuple, set 
-			\end{itemize}
-		\item Iterators, generators and recursion
-		\item Exception handling and testing
-		\begin{itemize}
-			\item assert; try ... except ...finally
-			\item mypy, pytest, unittest
-		\end{itemize}		
-	\end{itemize}
-\end{itemize}
-\end{frame}
 
-\begin{frame}{Python for Data Science}
-\begin{itemize}
-  \item Python for Data Science
-\begin{itemize}
-		\item conda (anaconda), venv (python) -> environment management
-		\item Jupyter notebook (AWS SageMaker is a plus)
-		\item Pandas, Numpy, SciKit-Learn, Scipy
-		\item Tensorflow/Keras and Pytorch 
-		\item Plotly, Bokeh, Matplotlib, Seaborn -> visualisation
-		\item Flask, Streamlit, Dash -> web applications
-\end{itemize}
-\end{itemize}
-\end{frame}
 	
 \begin{frame}{SQL, IDEs, Linear Algebra}	
 		\begin{itemize}
 			\item Other languages: SQL (MySQL or Microsoft SQL Server, PostgreSQL is a plus)
 			\item IDE/Interpreter
 			\begin{itemize}
-				\item Visual Code (+ extensions), RStudio (+ RStudio Server for cloud), PyCharm
+				\item Visual Code (+ extensions), Posit (+ Posit Server for cloud), PyCharm
 				\item Databases; JSON, YML (YAML), flat files
 			\end{itemize}
 		\end{itemize}
 	
 		\begin{itemize}
-	\item Linear Algebra
-	\begin{itemize}
-		\item Vectors, Matrices, and Tensors, eigenvectors/eigenvalues, singular value decomposition
-	\end{itemize}
-\end{itemize}		
-	\end{frame}
+			\item Linear Algebra
+		\begin{itemize}
+			\item Vectors, Matrices, and Tensors, eigenvectors/eigenvalues, singular value decomposition
+		\end{itemize}
+	\end{itemize}		
+
+\end{frame}
 
 \begin{frame}{Statistics and Machine Learning}	
 
 		\begin{itemize}
 			\item Normal, Poisson, and Exponential distributions, Mean, SD, Percentiles; Gaussian and Markov-Chain processes
-			\item Linear \& Logistic Regressions; Times-series/Forecasting; T-test/ANOVA (+ their non-parametric equivalents), error metrics (MSE, RMSE etc. ); Monte-Carlo simulation; Sampling with (and without) replacement; Copulas
-			\item Maximum Likelihood Estimator, Bayes rule, Prior/Posterior distributions, naive Bayes, K-means, KNN, Markov Chain, HMM, Decision Trees (+ Random Forest, XGBoost, LightGBM abd CatBoost); Gaussian mixture models
-			\item Neural Networks (at least feed-forward, CNNs, RNNs (e.g. LSTM and GRU)
+			\item Linear \& Logistic Regressions; T-test/ANOVA (+ their non-parametric equivalents), error metrics (MSE, RMSE etc. ); Monte-Carlo simulation; Sampling with (and without) replacement; Copulas
+			\item Maximum Likelihood Estimator, Bayes rule, Prior/Posterior distributions, naive Bayes, K-means, KNN, Markov Chain, HMM, Decision Trees (+ Random Forest, XGBoost, LightGBM and CatBoost); Gaussian mixture models
+			\item Neural Networks (feed-forward, CNNs, RNN variants (e.g. LSTM and GRU))
 			\item Clustering (k-means); dimensionality reduction (PCA, UMAP AutoEncoders and t-SNE)
 		\end{itemize}
+	
+\end{frame}
+
+\begin{frame}{Times-series and Forecasting}	
+	\begin{itemize}
+	\item Weak and Strong Stationarity
+	\begin{itemize}
+		\item Dickey-Fuller Test (\plus Augmented Dickey Fuller Test)
+		\item Unit Roots, White Noise
+		\item Box-Jenkings and Yeo-Johnson transformations
+	\end{itemize}
+	\item Autocorrelation and Partial Autocorrelation Function, multicolinearity
+	\item \underline{Traditional models:} ARIMA (SARIMA, SARIMAX), ETS, Prophet, Naive
+	\item \underline{Deep Learning models:} RNN variants (e.g. LSTM and GRU)), \href{https://neuralprophet.com/html/index.html}{NeuralProphet}
+	\item Granger Causality, moderators, mediators, colliders and confounders 
+	\item Vector Auto Regression (VAR)
+	\item ARCH and GARCH processes
+	\item Anomaly Detection
+
+\end{itemize}
 	
 \end{frame}
 
@@ -152,7 +198,7 @@ For aspiring data scientists:
 			\item Interpolation, Taylor expansion
 			\item Optimisation (especially gradient descent-based algorithms); Lagrange multipliers; Constrained and Unconstrained Programming
 		\end{itemize}
-	\item Linux/GNU and command-line proficiency
+		\item Linux/GNU and command-line proficiency
 	\begin{itemize}
 		\item Understanding of namespaces
 		\item Use of SSH, use of Bash (or any other shell), and RegEx (it will save you tons of time)
@@ -164,13 +210,13 @@ For aspiring data scientists:
 		\item PowerShell (preferable over CMD if on Windows)
 		\item git (the industry standard)
 	\end{itemize}
-\item Containerisation and Virtualisation
-\begin{itemize}
-	\item docker (understanding of microservices architecture and container orchestration (Kubernetes) is a plus)
-	\item Virtual Machines, Oracle VirtualBox, WSL (if on Windows 10)
-\end{itemize}
-
+		\item Containerisation and Virtualisation
+	\begin{itemize}
+		\item docker (understanding of microservices architecture and container orchestration (Kubernetes) is a plus)
+		\item Virtual Machines, Oracle VirtualBox, WSL (if on Windows 10)
 	\end{itemize}
+
+\end{itemize}
 
 \end{frame}
 
@@ -199,6 +245,7 @@ For aspiring data scientists:
 		\item Computer Vision (CNN's and Transformers)
 	\end{itemize}
 \end{frame}
+
 \begin{frame}{Big Data; Distributed Computing and AutoML}
 \begin{itemize}
 	\item Big Data
@@ -228,25 +275,31 @@ For aspiring data scientists:
 	\item Machine Learning Engineering by Andriy Burkov (\textbf{foundational})
 	\item Deep Learning with Python, 2nd Edition by Francois Chollet (\textbf{foundational and practical}))
 	\item Hands-On Machine Learning with Scikit-Learn, Keras and Tensorflow by Aurelien Geron (\textbf{practical})
-
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Recommended Books - Statistics}
 	\begin{itemize}
 		\item Statistical Rethinking: A Bayesian Course with Examples in R and Stan, \textit{Second Edition} by Richard McElreath (\textbf{foundational and practical}))
-		\item Basic Econometrics by Damodar Gujarati (\textbf{foundational})
-		\item Econometrics by Example, 2nd Edition by Damodar Gujarati (\textbf{practical})
+		\item Engineering Statistics by Douglas C Montgomery, George C Runger and Norma F Hubele (\textbf{practical})
 		\item Pattern Recognition and Machine Learning by Christopher Bishop (\textbf{theoretical})
 		\item The Elements of Statistical Learning by Hastie et al. (\textbf{theoretical})
 	\end{itemize}
 \end{frame}
 
+\begin{frame}{Recommended Books - Econometrics/Time-Series}
+	\begin{itemize}
+		\item Basic Econometrics by Damodar Gujarati (\textbf{foundational})
+		\item Econometrics by Example, 2nd Edition by Damodar Gujarati (\textbf{practical})
+		\item Deep Learning for Time Series Forecasting by Jason Brownlee (\textbf{practical})
+	\end{itemize}
+\end{frame}
+
 \begin{frame}{Recommended Books - Software Engineering}
 	\begin{itemize}
+		\item Expert Python Programming: Master Python by Learning the Best Coding Practices and Advanced Programming Concepts, \textit{4th Edition} by Michał Jaworski, Tarek Ziadé
 		\item Python Object-Oriented Programming, \textit{Fourth Edition} by Steven F. Lott \& Dusty Phillips
 		\item The Pragmatic Programmer, \textit{20th Anniversary Edition} by Andy Hunt and Dave Thomas
-		\item Expert Python Programming: Master Python by Learning the Best Coding Practices and Advanced Programming Concepts, \textit{4th Edition} by Michał Jaworski, Tarek Ziadé
 	\end{itemize}
 \end{frame}
 
